@@ -1,43 +1,43 @@
-info=`ps -ef |grep /usr/local/apache2/htdocs/connect/application/job/update_rabbitMQ_downloadBookInfo.php|grep -v grep|awk '{print $9}'`
+info=`ps -ef |grep a.php|grep -v grep|awk '{print $9}'`
 date=`date +'%Y-%m-%d'`
-if [ $info = '/usr/local/apache2/htdocs/connect/application/job/update_rabbitMQ_downloadBookInfo.php' ]
+if [ $info = 'a.php' ]
 then
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_downloadBookInfo.php running ok! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` a.php running ok! >> /home/hacker/process$date.txt
 else
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_downloadBookInfo.php is stopped! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
-	nohup /usr/local/php-5.3.6/bin/php /usr/local/apache2/htdocs/connect/application/job/update_rabbitMQ_downloadBookInfo.php 2>&1 > /dev/null &
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_downloadBookInfo.php is restart! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` a.php is stopped! >> /home/hacker/process$date.txt
+	nohup /usr/local/php-5.3.6/bin/php a.php 2>&1 > /dev/null &
+	echo `date +'%Y-%m-%d %H:%M:%S'` a.php is restart! >> /home/hacker/process$date.txt
 fi
 
-info=`ps -ef |grep /usr/local/apache2/htdocs/connect/application/job/update_rabbitMQ_rechargingInfo.php|grep -v grep|awk '{print $9}'`
+info=`ps -ef |grep b|grep -v grep|awk '{print $9}'`
 date=`date +'%Y-%m-%d'`
-if [ $info = '/usr/local/apache2/htdocs/connect/application/job/update_rabbitMQ_rechargingInfo.php' ]
+if [ $info = 'b' ]
 then
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_rechargingInfo.php running ok! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` b.php running ok! >> /home/hacker/process$date.txt
 else
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_rechargingInfo.php is stopped! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
-	nohup /usr/local/php-5.3.6/bin/php /usr/local/apache2/htdocs/connect/application/job/update_rabbitMQ_rechargingInfo.php 2>&1 > /dev/null &
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_rechargingInfo.php is restart! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` b.php is stopped! >> /home/hacker/process$date.txt
+	nohup /usr/local/php-5.3.6/bin/php b 2>&1 > /dev/null &
+	echo `date +'%Y-%m-%d %H:%M:%S'` b.php is restart! >> /home/hacker/process$date.txt
 fi
 
-info=`ps -ef |grep /usr/local/apache2/htdocs/connect/application/job/update_zy_monthpay.php|grep -v grep|awk '{print $9}'`
+info=`ps -ef |grep c|grep -v grep|awk '{print $9}'`
 date=`date +'%Y-%m-%d'`
-if [ $info = '/usr/local/apache2/htdocs/connect/application/job/update_zy_monthpay.php' ]
+if [ $info = 'c' ]
 then
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_zy_monthpay.php running ok! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` c.php running ok! >> /home/hacker/process$date.txt
 else
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_zy_monthpay.php is stopped! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
-	nohup /usr/local/php-5.3.6/bin/php /usr/local/apache2/htdocs/connect/application/job/update_zy_monthpay.php 2>&1 > /dev/null &
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_zy_monthpay.php is restart! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` c.php is stopped! >> /home/hacker/process$date.txt
+	nohup /usr/local/php-5.3.6/bin/php c 2>&1 > /dev/null &
+	echo `date +'%Y-%m-%d %H:%M:%S'` c.php is restart! >> /home/hacker/process$date.txt
 fi
 
-info=`ps -ef |grep /var/www/html/zybook/job/update_rabbitMQ_userInfo.php|grep -v grep|awk '{print $9}'`
+info=`ps -ef |grep d|grep -v grep|awk '{print $9}'`
 date=`date +'%Y-%m-%d'`
-if [ $info = '/var/www/html/zybook/job/update_rabbitMQ_userInfo.php' ]
+if [ $info = 'd' ]
 then
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_userInfo.php running ok! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` d.php running ok! >> /home/hacker/process$date.txt
 else
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_userInfo.php is stopped! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
-	nohup /usr/bin/php /var/www/html/zybook/job/update_rabbitMQ_userInfo.php 2>&1 > /dev/null &
-	echo `date +'%Y-%m-%d %H:%M:%S'` update_rabbitMQ_userInfo.php is restart! >> /usr/local/apache2/htdocs/connect/logs/process$date.txt
+	echo `date +'%Y-%m-%d %H:%M:%S'` d.php is stopped! >> /home/hacker/process$date.txt
+	nohup /usr/bin/php d 2>&1 > /dev/null &
+	echo `date +'%Y-%m-%d %H:%M:%S'` d.php is restart! >> /home/hacker/process$date.txt
 fi
