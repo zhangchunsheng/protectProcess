@@ -1,0 +1,2 @@
+#crontab -e
+#0 8 * * * /tmp/process_monitor/monitor.sh
